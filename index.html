@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review QR</title>
+    <meta
+      name="description"
+      content="Review QR helps shoppers discover smart products and scan to learn more."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container hero__content">
+        <div>
+          <p class="eyebrow">Smart shopping, simplified</p>
+          <h1>Review QR makes every product story instantly accessible.</h1>
+          <p class="hero__text">
+            Scan, explore, and compare the products you love through a clean and modern experience.
+          </p>
+          <a href="#shop" class="btn btn--primary">Explore Products</a>
+        </div>
+        <div class="hero__card">
+          <img src="assets/logo.png" alt="Review QR logo" class="hero__logo" />
+          <h2>Trusted by modern shoppers</h2>
+          <p>Discover curated picks, honest reviews, and quick product insights in one place.</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="shop" class="section">
+        <div class="container">
+          <div class="section__heading">
+            <p class="eyebrow">Featured picks</p>
+            <h2>Popular products ready to review</h2>
+          </div>
+          <div id="shop-list" class="shop-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="data/shop.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
