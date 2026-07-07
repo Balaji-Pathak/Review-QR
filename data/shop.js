@@ -1,22 +1,18 @@
-const shopProducts = [
-  {
-    name: "Aurora Bottle",
-    description: "Insulated bottle with a smart temperature display.",
-    price: "$29",
-    tag: "Best Seller",
-  },
-  {
-    name: "Glow Desk Lamp",
-    description: "Ambient lighting designed for focused work sessions.",
-    price: "$49",
-    tag: "New",
-  },
-  {
-    name: "Nova Travel Bag",
-    description: "Compact and durable bag for everyday carry.",
-    price: "$39",
-    tag: "Trending",
-  },
-];
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    const shop = {
+  name: "ABC Restaurant",
+  logo: "assets/logo.png",
+  rating: 4.8,
+  reviewCount: 327,
+  googleReview: "https://example.com",
+  welcomeTitle: "Enjoyed your visit?",
+  welcomeMessage:
+    "Your review helps our small business grow and helps future customers make informed decisions.",
+  reviews: [
+    "The food was delicious, the staff was friendly, and the service was excellent. Highly recommended.",
+    "We had a wonderful experience from start to finish. The atmosphere was warm and the team made us feel welcome.",
+    "Everything was fresh, beautifully presented, and served with care. We will definitely come back again.",
+    "Great service, excellent flavors, and a lovely environment. A perfect spot for a relaxed meal.",
+  ],
+};
 
-window.shopProducts = shopProducts;
+window.shop = shop;

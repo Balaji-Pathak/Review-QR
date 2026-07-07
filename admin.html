@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review QR Generator</title>
+    <meta
+      name="description"
+      content="Generate a QR code for your review landing page."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="generator-card" aria-labelledby="generator-title">
+        <div class="card-header">
+          <p class="eyebrow">Admin Tool</p>
+          <h1 id="generator-title">Review QR Generator</h1>
+          <p class="subtitle">
+            Generate a QR code that customers can scan to open the Review Page.
+          </p>
+        </div>
+
+        <form id="qr-form" class="qr-form" novalidate>
+          <label class="field-label" for="review-url">Review Page URL</label>
+          <input
+            id="review-url"
+            name="review-url"
+            type="url"
+            placeholder="https://review-qr-neon.vercel.app/"
+            autocomplete="url"
+            required
+          />
+
+          <div class="actions">
+            <button class="btn btn--primary" type="submit">Generate QR</button>
+            <button class="btn btn--ghost" type="button" id="clear-btn">Generate New</button>
+          </div>
+
+          <p id="form-error" class="form-error" aria-live="polite"></p>
+        </form>
+
+        <section id="result-panel" class="result-panel" hidden>
+          <div class="qr-preview-card">
+            <div id="qr-code" class="qr-code" aria-label="Generated QR code"></div>
+            <p class="result-url" id="result-url"></p>
+            <div class="result-actions">
+              <button class="btn btn--secondary" id="download-btn" type="button">Download QR</button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
